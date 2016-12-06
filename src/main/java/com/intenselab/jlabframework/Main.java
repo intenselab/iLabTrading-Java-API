@@ -5,7 +5,7 @@ import org.msgpack.template.Templates;
 import org.msgpack.type.Value;
 import org.msgpack.unpacker.Converter;
 
-import java.nio.charset.StandardCharsets;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +16,14 @@ public class Main {
 
       Test t = new Test();
 
+        IntenseLabSession s= new IntenseLabSession();
 
+        s.TryConnect("some","pwd","host",123);
+
+
+
+
+/*
         try
         {
 
@@ -34,5 +41,6 @@ public class Main {
             System.out.println("EXC");
 
         }
+        */
     }
 }
