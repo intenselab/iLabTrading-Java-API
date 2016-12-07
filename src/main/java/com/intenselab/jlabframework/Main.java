@@ -18,17 +18,25 @@ public class Main {
 
         IntenseLabSession s= new IntenseLabSession();
 
-        s.TryConnect("some","pwd","host",123);
 
 
-
-
-/*
+        AuthSession session = new AuthSession();
         try
         {
+        session.TryConnect("a","pwd","lb1.trader.intenselab.eu",24010);
+
+        }catch (Exception e)
+        {
+            System.out.println("EXC");
+
+        }
+
+//        s.TryConnect("some","pwd","host",123);
 
 
 
+        /*    try
+                {
         MessagePack msgpack = new MessagePack();
 // Serialize
         byte[] raw = msgpack.write(t);
